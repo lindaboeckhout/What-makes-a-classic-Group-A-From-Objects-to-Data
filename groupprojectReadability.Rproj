@@ -38,3 +38,27 @@ Flesch-Kincaid Grade Level
          Age: 10.55 
 
 Text language: en 
+> omftok<-tokenize('C:/Users/Linda/Dropbox/GroupProject/OurMutualFriend_CharlesDickens.txt')
+> OurMutualFriendFK<-flesch.kincaid(omftok)
+Hyphenation (language: en)
+  |============================================================================================| 100%
+> OurMutualFriendFK
+
+Flesch-Kincaid Grade Level
+  Parameters: default 
+       Grade: 6.4 
+         Age: 11.4 
+
+Text language: en 
+> omftok<-tokenize('C:/Users/Linda/Dropbox/GroupProject/OurMutualFriend_CharlesDickens.txt')
+> OurMutualFriendFK<-flesch.kincaid(omftok)
+Hyphenation (language: en)
+  |============================================================================================| 100%
+> OurMutualFriendFK
+
+Flesch-Kincaid Grade Level
+  Parameters: default 
+       Grade: 6.4 
+         Age: 11.4 
+
+Text language: en 
