@@ -1,0 +1,2 @@
+#Testing Flesch-Kincaid readability on Charles Dickens
+library("koRpus", lib.loc="~/R/win-library/3.3")
