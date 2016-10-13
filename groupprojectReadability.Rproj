@@ -1,2 +1,3 @@
-#Testing Flesch-Kincaid readability on Charles Dickens
-library("koRpus", lib.loc="~/R/win-library/3.3")
+#Testing Flesch-Kincaid readability on Charles Dickens in Rstudio by using koRpus/TreeTagger and a Perl interpreter
+> library("koRpus", lib.loc="~/R/win-library/3.3")
+> tpptok<-tokenize('C:\Users\Linda\Dropbox\GroupProject\ThePickwickPapers_CharlesDickens.txt')
