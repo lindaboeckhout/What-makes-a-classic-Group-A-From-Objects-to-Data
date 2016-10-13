@@ -74,3 +74,15 @@ Flesch-Kincaid Grade Level
          Age: 9.89 
 
 Text language: en 
+> nntok<-tokenize('C:/Users/Linda/Dropbox/GroupProject/NicholasNickleby_CharlesDickens.txt')
+> NicholasNicklebyFK<-flesch.kincaid(nntok)
+Hyphenation (language: en)
+  |============================================================================================| 100%
+> NicholasNicklebyFK
+
+Flesch-Kincaid Grade Level
+  Parameters: default 
+       Grade: 6.7 
+         Age: 11.7 
+
+Text language: en 
