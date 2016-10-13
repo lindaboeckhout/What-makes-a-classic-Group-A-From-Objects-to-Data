@@ -12,3 +12,17 @@ Flesch-Kincaid Grade Level
          Age: 10.6 
 
 Text language: en 
+> tocstok<-tokenize('C:/Users/Linda/Dropbox/GroupProject/TheOldCuriosityShop_CharlesDickens.txt')
+> TheOldCuriosityShopFK<-flesch.kincaid(tcostok)
+Error in flesch.kincaid(tcostok) : object 'tcostok' not found
+> TheOldCuriosityShopFK<-flesch.kincaid(tocstok)
+Hyphenation (language: en)
+  |============================================================================================| 100%
+> TheOldCuriosityShopFK
+
+Flesch-Kincaid Grade Level
+  Parameters: default 
+       Grade: 7.86 
+         Age: 12.86 
+
+Text language: en 
