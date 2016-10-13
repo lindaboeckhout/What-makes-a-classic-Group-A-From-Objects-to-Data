@@ -2,3 +2,13 @@
 > library("koRpus", lib.loc="~/R/win-library/3.3")
 > tpptok<-tokenize('C:\Users\Linda\Dropbox\GroupProject\ThePickwickPapers_CharlesDickens.txt')
 > ThePickwickPapersFK<-flesch.kincaid(tpptok)
+Hyphenation (language: en)
+  |============================================================================================| 100%
+> ThePickwickPapersFK
+
+Flesch-Kincaid Grade Level
+  Parameters: default 
+       Grade: 5.6 
+         Age: 10.6 
+
+Text language: en 
