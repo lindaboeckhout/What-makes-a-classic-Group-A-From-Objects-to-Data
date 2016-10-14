@@ -264,3 +264,11 @@ Automated Readability Index (ARI)
        Grade: 4.64 
 
 Text language: en 
+> BarnabyRudgeARI<-ARI(brtok)
+> BarnabyRudgeARI
+
+Automated Readability Index (ARI)
+  Parameters: default 
+       Grade: 5.87 
+
+Text language: en 
