@@ -450,6 +450,14 @@ Automated Readability Index (ARI)
 Text language: en 
 > pertok<-tokenize('C:/Users/Linda/Dropbox/GroupProject/Persuasion_JaneAusten.txt')
 > Persuasionfk<-flesch.kincaid(pertok)
+> Persuasionfk
+
+Flesch-Kincaid Grade Level
+  Parameters: default 
+       Grade: 7.18 
+         Age: 12.18 
+
+Text language: en 
 Hyphenation (language: en)
   |============================================================================================| 100%
 > PersuasionARI<-ARI(pertok)
@@ -458,5 +466,25 @@ Hyphenation (language: en)
 Automated Readability Index (ARI)
   Parameters: default 
        Grade: 7.29 
+
+Text language: en
+> nortok<-tokenize('C:/Users/Linda/Dropbox/GroupProject/NorthangerAbbey_JaneAusten.txt')
+> NorthangerAbbeyfk<-flesch.kincaid(nortok)
+Hyphenation (language: en)
+  |============================================================================================| 100%
+> NorthangerAbbeyfk
+
+Flesch-Kincaid Grade Level
+  Parameters: default 
+       Grade: 6.89 
+         Age: 11.89 
+
+Text language: en 
+> NorthangerAbbeyARI<-ARI(nortok)
+> NorthangerAbbeyARI
+
+Automated Readability Index (ARI)
+  Parameters: default 
+       Grade: 5.89 
 
 Text language: en 
