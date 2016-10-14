@@ -151,3 +151,15 @@ Flesch-Kincaid Grade Level
          Age: 12.11 
 
 Text language: en 
+> brtok<-tokenize('C:/Users/Linda/Dropbox/GroupProject/BarnabyRudge_CharlesDickens.txt')
+> BarnabyRudgefk<-flesch.kincaid(brtok)
+Hyphenation (language: en)
+  |============================================================================================| 100%
+> BarnabyRudgefk
+
+Flesch-Kincaid Grade Level
+  Parameters: default 
+       Grade: 7.01 
+         Age: 12.01 
+
+Text language: en 
