@@ -1,6 +1,11 @@
 #Testing Flesch-Kincaid readability on Charles Dickens in Rstudio by using koRpus/TreeTagger and a Perl interpreter
+#Activating koRpus library
 > library("koRpus", lib.loc="~/R/win-library/3.3")
+#Setting up language files
+> koRpus::set.kRp.env(TT.cmd="C:/TreeTagger/bin/tag-english.bat", lang="en")
+#Tokenizing the ebook file
 > tpptok<-tokenize('C:\Users\Linda\Dropbox\GroupProject\ThePickwickPapers_CharlesDickens.txt')
+#Calculating Flesch-Kincaid readability grade
 > ThePickwickPapersFK<-flesch.kincaid(tpptok)
 Hyphenation (language: en)
   |============================================================================================| 100%
