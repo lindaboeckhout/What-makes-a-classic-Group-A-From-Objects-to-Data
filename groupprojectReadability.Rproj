@@ -448,3 +448,15 @@ Automated Readability Index (ARI)
        Grade: 5.21 
 
 Text language: en 
+> pertok<-tokenize('C:/Users/Linda/Dropbox/GroupProject/Persuasion_JaneAusten.txt')
+> Persuasionfk<-flesch.kincaid(pertok)
+Hyphenation (language: en)
+  |============================================================================================| 100%
+> PersuasionARI<-ARI(pertok)
+> PersuasionARI
+
+Automated Readability Index (ARI)
+  Parameters: default 
+       Grade: 7.29 
+
+Text language: en 
