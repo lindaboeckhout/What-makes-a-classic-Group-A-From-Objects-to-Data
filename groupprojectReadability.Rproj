@@ -91,4 +91,15 @@ Flesch-Kincaid Grade Level
          Age: 11.7 
 
 Text language: en 
+> dastok<-tokenize('C:/Users/Linda/Dropbox/GroupProject/DombeyandSon_CharlesDickens.txt')
+> DombeyandSonfk<-flesch.kincaid(dastok)
+Hyphenation (language: en)
+  |==========================================================================================================| 100%
+> DombeyandSonfk
 
+Flesch-Kincaid Grade Level
+  Parameters: default 
+       Grade: 7.21 
+         Age: 12.21 
+
+Text language: en 
