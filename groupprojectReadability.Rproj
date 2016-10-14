@@ -224,3 +224,11 @@ Automated Readability Index (ARI)
        Grade: 5.51 
 
 Text language: en 
+> HardTimesARI<-ARI(httok)
+> HardTimesARI
+
+Automated Readability Index (ARI)
+  Parameters: default 
+       Grade: 3.19 
+
+Text language: en 
