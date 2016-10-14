@@ -320,3 +320,31 @@ Automated Readability Index (ARI)
        Grade: 3.11 
 
 Text language: en 
+> tocstok<-tokenize('C:/Users/Linda/Dropbox/GroupProject/TheOldCuriosityShop_CharlesDickens.txt')
+> TheOldCuriosityShopfk<-flesch.kincaid(tocstok)
+Hyphenation (language: en)
+  |============================================================================================| 100%
+> TheOldCuriosityShopfk 
+
+Flesch-Kincaid Grade Level
+  Parameters: default 
+       Grade: 7.86 
+         Age: 12.86 
+
+Text language: en 
+> TheOldCuriosityShopARI<-ARI(tocstok)
+> TheOldCuriosityShopARI
+
+Automated Readability Index (ARI)
+  Parameters: default 
+       Grade: 6.84 
+
+Text language: en 
+> NicholasNicklebyARI<-ARI(nntok)
+> NicholasNicklebyARI
+
+Automated Readability Index (ARI)
+  Parameters: default 
+       Grade: 4.76 
+
+Text language: en
