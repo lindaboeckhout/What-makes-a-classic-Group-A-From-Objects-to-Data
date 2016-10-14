@@ -348,3 +348,12 @@ Automated Readability Index (ARI)
        Grade: 4.76 
 
 Text language: en
+> ottok<-tokenize('C:/Users/Linda/Dropbox/GroupProject/OliverTwist_CharlesDickens.txt')
+> OliverTwistARI<-ARI(ottok)
+> OliverTwistARI
+
+Automated Readability Index (ARI)
+  Parameters: default 
+       Grade: 4.53 
+
+Text language: en 
