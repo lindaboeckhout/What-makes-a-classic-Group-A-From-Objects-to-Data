@@ -187,3 +187,15 @@ Flesch-Kincaid Grade Level
          Age: 11.36 
 
 Text language: en 
+> mctok<-tokenize('C:/Users/Linda/Dropbox/GroupProject/MartinChuzzlewit_CharlesDickens.txt')
+> MartinChuzzlewitfk<-flesch.kincaid(mctok)
+Hyphenation (language: en)
+  |============================================================================================| 100%
+> MartinChuzzlewitfk
+
+Flesch-Kincaid Grade Level
+  Parameters: default 
+       Grade: 6.05 
+         Age: 11.05 
+
+Text language: en 
