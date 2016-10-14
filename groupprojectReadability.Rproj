@@ -428,3 +428,23 @@ Automated Readability Index (ARI)
        Grade: 6.55 
 
 Text language: en 
+> emmatok<-tokenize('C:/Users/Linda/Dropbox/GroupProject/Emma_JaneAusten.txt')
+> Emmafk<-flesch.kincaid(emmatok)
+Hyphenation (language: en)
+  |============================================================================================| 100%
+> Emmafk
+
+Flesch-Kincaid Grade Level
+  Parameters: default 
+       Grade: 5.65 
+         Age: 10.65 
+
+Text language: en 
+> EmmaARI<-ARI(emmatok)
+> EmmaARI
+
+Automated Readability Index (ARI)
+  Parameters: default 
+       Grade: 5.21 
+
+Text language: en 
