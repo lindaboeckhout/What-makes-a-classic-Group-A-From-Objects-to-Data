@@ -103,3 +103,15 @@ Flesch-Kincaid Grade Level
          Age: 12.21 
 
 Text language: en 
+> dctok<-tokenize('C:/Users/Linda/Dropbox/GroupProject/DavidCopperfield_CharlesDickens.txt')
+> DavidCopperfieldfk<-flesch.kincaid(dctok)
+Hyphenation (language: en)
+  |============================================================================================| 100%
+> DavidCopperfieldfk
+
+Flesch-Kincaid Grade Level
+  Parameters: default 
+       Grade: 5.7 
+         Age: 10.7 
+
+Text language: en 
