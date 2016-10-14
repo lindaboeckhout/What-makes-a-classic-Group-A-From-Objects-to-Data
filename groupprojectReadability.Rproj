@@ -256,3 +256,11 @@ Automated Readability Index (ARI)
        Grade: 3.43 
 
 Text language: en 
+> AtaleoftwocitiesARI<-ARI(atotctok)
+> AtaleoftwocitiesARI
+
+Automated Readability Index (ARI)
+  Parameters: default 
+       Grade: 4.64 
+
+Text language: en 
