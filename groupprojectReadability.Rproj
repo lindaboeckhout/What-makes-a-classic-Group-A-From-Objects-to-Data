@@ -198,3 +198,21 @@ Flesch-Kincaid Grade Level
          Age: 11.05 
 
 Text language: en 
+#
+> MartinChuzzlewitARI<-ARI(mctok)
+> MartinChuzzlewitARI
+
+Automated Readability Index (ARI)
+  Parameters: default 
+       Grade: 3.91 
+
+Text language: en 
+#Calculating ARI readability grade
+> MartinChuzzlewitARI<-ARI(mctok)
+> MartinChuzzlewitARI
+
+Automated Readability Index (ARI)
+  Parameters: default 
+       Grade: 3.91 
+
+Text language: en 
