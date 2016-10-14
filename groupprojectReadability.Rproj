@@ -366,3 +366,23 @@ Automated Readability Index (ARI)
        Grade: 2.84 
 
 Text language: en 
+> sensetok<-tokenize('C:/Users/Linda/Dropbox/GroupProject/SenseandSensibility_JaneAusten.txt')
+> Sensefk<-flesch.kincaid(sensetok)
+Hyphenation (language: en)
+  |============================================================================================| 100%
+> Sensefk
+
+Flesch-Kincaid Grade Level
+  Parameters: default 
+       Grade: 7.41 
+         Age: 12.41 
+
+Text language: en 
+> SenseandSensibilityARI<-ARI(sensetok)
+> SenseandSensibilityARI
+
+Automated Readability Index (ARI)
+  Parameters: default 
+       Grade: 7.33 
+
+Text language: en 
