@@ -1,4 +1,4 @@
-#Testing Flesch-Kincaid and ARI readability on Charles Dickens in Rstudio by using koRpus/TreeTagger and a Perl interpreter
+#Testing Flesch-Kincaid and ARI readability on the novels of Charles Dickens and Jane Austen in Rstudio by using koRpus/TreeTagger and a Perl interpreter
 #Activating koRpus library
 > library("koRpus", lib.loc="~/R/win-library/3.3")
 #Setting up language files
