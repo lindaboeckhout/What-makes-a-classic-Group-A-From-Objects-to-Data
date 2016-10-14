@@ -272,3 +272,11 @@ Automated Readability Index (ARI)
        Grade: 5.87 
 
 Text language: en 
+> DombeyandSonARI<-ARI(dastok)
+> DombeyandSonARI
+
+Automated Readability Index (ARI)
+  Parameters: default 
+       Grade: 5.68 
+
+Text language: en 
