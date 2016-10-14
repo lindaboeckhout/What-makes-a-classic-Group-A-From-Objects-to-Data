@@ -357,3 +357,12 @@ Automated Readability Index (ARI)
        Grade: 4.53 
 
 Text language: en 
+> tpptok<-tokenize('C:/Users/Linda/Dropbox/GroupProject/ThePickwickPapers_CharlesDickens.txt')
+> ThePickwickPapersARI<-ARI(tpptok)
+> ThePickwickPapersARI
+
+Automated Readability Index (ARI)
+  Parameters: default 
+       Grade: 2.84 
+
+Text language: en 
