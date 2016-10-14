@@ -127,3 +127,15 @@ Flesch-Kincaid Grade Level
          Age: 10.68 
 
 Text language: en 
+> httok<-tokenize('C:/Users/Linda/Dropbox/GroupProject/HardTimes_CharlesDickens.txt')
+> HardTimesfk<-flesch.kincaid(httok)
+Hyphenation (language: en)
+  |============================================================================================| 100%
+> HardTimesfk
+
+Flesch-Kincaid Grade Level
+  Parameters: default 
+       Grade: 5.63 
+         Age: 10.63 
+
+Text language: en
