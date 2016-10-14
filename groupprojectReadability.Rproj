@@ -163,3 +163,27 @@ Flesch-Kincaid Grade Level
          Age: 12.01 
 
 Text language: en 
+> atotctok<-tokenize('C:/Users/Linda/Dropbox/GroupProject/ATaleofTwoCities_CharlesDickens.txt')
+> ATaleofTwoCitiesfk<-flesch.kincaid(atotctok)
+Hyphenation (language: en)
+  |============================================================================================| 100%
+> ATaleofTwoCitiesfk
+
+Flesch-Kincaid Grade Level
+  Parameters: default 
+       Grade: 5.94 
+         Age: 10.94 
+
+Text language: en 
+> getok<-tokenize('C:/Users/Linda/Dropbox/GroupProject/GreatExpectations_CharlesDickens.txt')
+> GreatExpectationsfk<-flesch.kincaid(getok)
+Hyphenation (language: en)
+  |============================================================================================| 100%
+> GreatExpectationsfk
+
+Flesch-Kincaid Grade Level
+  Parameters: default 
+       Grade: 6.36 
+         Age: 11.36 
+
+Text language: en 
