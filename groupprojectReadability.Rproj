@@ -139,3 +139,15 @@ Flesch-Kincaid Grade Level
          Age: 10.63 
 
 Text language: en
+> ldtok<-tokenize('C:/Users/Linda/Dropbox/GroupProject/LittleDorrit_CharlesDickens.txt')
+> LittleDorritfk<-flesch.kincaid(ldtok)
+Hyphenation (language: en)
+  |============================================================================================| 100%
+> LittleDorritfk
+
+Flesch-Kincaid Grade Level
+  Parameters: default 
+       Grade: 7.11 
+         Age: 12.11 
+
+Text language: en 
