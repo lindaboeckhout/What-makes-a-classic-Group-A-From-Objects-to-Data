@@ -19,7 +19,6 @@ Flesch-Kincaid Grade Level
 Text language: en 
 > tocstok<-tokenize('C:/Users/Linda/Dropbox/GroupProject/TheOldCuriosityShop_CharlesDickens.txt')
 > TheOldCuriosityShopFK<-flesch.kincaid(tcostok)
-Error in flesch.kincaid(tcostok) : object 'tcostok' not found
 > TheOldCuriosityShopFK<-flesch.kincaid(tocstok)
 Hyphenation (language: en)
   |============================================================================================| 100%
