@@ -216,3 +216,11 @@ Automated Readability Index (ARI)
        Grade: 3.91 
 
 Text language: en 
+> LittleDorritARI<-ARI(ldtok)
+> LittleDorritARI
+
+Automated Readability Index (ARI)
+  Parameters: default 
+       Grade: 5.51 
+
+Text language: en 
