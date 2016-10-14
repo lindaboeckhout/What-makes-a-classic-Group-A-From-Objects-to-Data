@@ -115,3 +115,15 @@ Flesch-Kincaid Grade Level
          Age: 10.7 
 
 Text language: en 
+> bhtok<-tokenize('C:/Users/Linda/Dropbox/GroupProject/BleakHouse_CharlesDickens.txt')
+> BleakHousefk<-flesch.kincaid(bhtok)
+Hyphenation (language: en)
+  |============================================================================================| 100%
+> BleakHousefk
+
+Flesch-Kincaid Grade Level
+  Parameters: default 
+       Grade: 5.68 
+         Age: 10.68 
+
+Text language: en 
