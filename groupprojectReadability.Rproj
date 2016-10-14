@@ -232,3 +232,11 @@ Automated Readability Index (ARI)
        Grade: 3.19 
 
 Text language: en 
+> GreatExpectationsARI<-ARI(getok)
+> GreatExpectationsARI
+
+Automated Readability Index (ARI)
+  Parameters: default 
+       Grade: 4.67 
+
+Text language: en 
