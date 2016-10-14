@@ -386,3 +386,45 @@ Automated Readability Index (ARI)
        Grade: 7.33 
 
 Text language: en 
+> pridetok<-tokenize('C:/Users/Linda/Dropbox/GroupProject/PrideandPrejudice_JaneAusten.txt')
+> Pridefk<-flesch.kincaid(pridetok)
+Hyphenation (language: en)
+  |============================================================================================| 100%
+> Pridefk
+
+Flesch-Kincaid Grade Level
+  Parameters: default 
+       Grade: 6.47 
+         Age: 11.47 
+
+Text language: en 
+> sensetok<-tokenize('C:/Users/Linda/Dropbox/GroupProject/SenseandSensibility_JaneAusten.txt')
+
+> PrideandPrejudiceARI<-ARI(pridetok)
+> PrideandPrejudiceARI
+
+Automated Readability Index (ARI)
+  Parameters: default 
+       Grade: 6.19 
+
+Text language: en
+> mptok<-tokenize('C:/Users/Linda/Dropbox/GroupProject/MansfieldPark_JaneAusten.txt')
+> MansfieldParkfk<-flesch.kincaid(mptok)
+Hyphenation (language: en)
+  |============================================================================================| 100%
+> MansfieldParkfk
+
+Flesch-Kincaid Grade Level
+  Parameters: default 
+       Grade: 6.67 
+         Age: 11.67 
+
+Text language: en 
+> MansfieldParkARI<-ARI(mptok)
+> MansfieldParkARI
+
+Automated Readability Index (ARI)
+  Parameters: default 
+       Grade: 6.55 
+
+Text language: en 
