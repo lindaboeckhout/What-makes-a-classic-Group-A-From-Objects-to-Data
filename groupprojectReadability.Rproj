@@ -280,3 +280,43 @@ Automated Readability Index (ARI)
        Grade: 5.68 
 
 Text language: en 
+> omftok<-tokenize('C:/Users/Linda/Dropbox/GroupProject/OurMutualFriend_CharlesDickens.txt')
+> OurMutualFriendfk<-flesch.kincaid(getok)
+Hyphenation (language: en)
+  |============================================================================================| 100%
+> OurMutualFriendfk
+
+Flesch-Kincaid Grade Level
+  Parameters: default 
+       Grade: 6.36 
+         Age: 11.36 
+
+Text language: en 
+> OurMutualFriendARI<-ARI(omftok)
+> OurMutualFriendARI
+
+Automated Readability Index (ARI)
+  Parameters: default 
+       Grade: 3.93 
+
+Text language: en 
+> tmoedtok<-tokenize('C:/Users/Linda/Dropbox/GroupProject/TheMysteryofEdwinDrood_CharlesDickens.txt')
+> TheMysteryofEdwinDroodfk<-flesch.kincaid(tmoedtok)
+Hyphenation (language: en)
+  |============================================================================================| 100%
+> TheMysterofEdwinDroodfk
+
+Flesch-Kincaid Grade Level
+  Parameters: default 
+       Grade: 5.55 
+         Age: 10.55 
+
+Text language: en 
+> TheMysteryofEdwinDroodARI<-ARI(tmoedtok)
+> TheMysteryofEdwinDroodARI
+
+Automated Readability Index (ARI)
+  Parameters: default 
+       Grade: 3.11 
+
+Text language: en 
