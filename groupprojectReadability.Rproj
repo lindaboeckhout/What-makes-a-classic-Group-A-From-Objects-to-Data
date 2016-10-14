@@ -240,3 +240,19 @@ Automated Readability Index (ARI)
        Grade: 4.67 
 
 Text language: en 
+> BleakHouseARI<-ARI(bhtok)
+> BleakHouseARI
+
+Automated Readability Index (ARI)
+  Parameters: default 
+       Grade: 5.21 
+
+Text language: en 
+> DavidCopperfieldARI<-ARI(dctok)
+> DavidCopperfieldARI
+
+Automated Readability Index (ARI)
+  Parameters: default 
+       Grade: 3.43 
+
+Text language: en 
