@@ -1,0 +1,8 @@
+A simple way to expord a dataframe as pdf table
+
+> library(gridExtra)
+> pdf("data_output.pdf", height=15, width=30)
+> grid.table(data)
+> dev.off()
+null device 
+          1 
