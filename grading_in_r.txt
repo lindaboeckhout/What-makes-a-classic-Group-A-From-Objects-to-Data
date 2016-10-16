@@ -1,0 +1,13 @@
+> data<-readODS::read_ods('PopularityDataReadability.ods')
+
+> data$`overall rating` <- as.numeric(data$`overall rating`)
+
+> r<-data$`overall rating`
+
+> rG<-r*100/max(r)
+
+> total<-(revG+ratG+eG+rG)/4
+
+> data["Overall rating %"]<-rG
+
+> saveRDS(data,file = "data.rds")
