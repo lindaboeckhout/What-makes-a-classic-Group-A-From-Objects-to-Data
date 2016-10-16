@@ -1,0 +1,121 @@
+
+Book ReviewBook Review
+How ToHow To
+Readability ScoresReadability Scores
+Research ArticlesResearch Articles
+     Abstract vs Executive Summary
+     Acquisition Plan (AP) Template and Sample
+     Analytical Hierarchy Process (AHP)
+     Bid Responsiveness Determination: Is Your Bid Responsive?
+     Bid/No-Bid Analysis, No-Bid Letter
+     Bidder Responsibility Determination
+     Compare ERP
+     Competitive Procurement
+     Dale-Chall 3000 Simple Word List, Readability Grade Score
+     Decision Making Resources
+     Decision-making methods (MCDM, MCDA) in the news
+     Executive Summary Template and Sample
+     Federal Procurement Essentials: Sealed Bids
+     Free Company Profile Template
+     Free Sample Affidavit Form, Examples, Templates
+     List of Action Verbs
+     List of Work Words, FREE List (Excel format)
+     Multi Criteria Decision Making MCDM
+     Request for Proposal RFP Procedures and Tips
+     Sole Source Justification and Approval (J&A)
+     Solicitation and Selection Methods
+     Uniform Contract Format (UCF)
+     Writing an RFP
+RFP LettersRFP Letters
+TemplatesTemplates
+What isWhat is
+The Dale-Chall list of 3,000 simple words
+
+Also known as: Dale-Chall, Dale-Chall word list, Dale-Chall list of 3,000, Dale-Chall list of 3000 familiar words,
+
+The Dale-Chall word list contains 3,000 simple, familiar words, which more of 80% of 4th grade students can understand. Thus, words not on that list are not familiar or unfamiliar, and therefore considered as difficult to understand.
+
+The formula was created by Edgar Dale and Jeanne S. Chall and was published in 1948 in their book "A formula for predicting readability" (out of print). The list contained initially only 763 familiar, simple words and was later extended to 3,000, and then called Dale-Chall modified list. This formula is not the most popular although it has always been and is still considered more accurate than other formulas like the Flesch Reading Easescore, or the Flesch-Kincaid Grade Level.
+Dale-Chall Readability Formula
+
+Also known as: Dale-Chall readability, Dale-Chall readability score,
+
+The Dale-Chall readability formula computes a raw score, called the Reading Grade Score (RGS), which rates text on a U.S. grade-school level based on the average sentence length and the number of unfamiliar words, using the list of 3,000 words commonly known by 4th grade students.
+
+The formula for the Reading Grade Score is:
+
+    RGS = (0.1579 x DS) + (0.0496 x ASL) + 3.6365
+
+where:
+
+    RGS 	: 	Reading Grade Score
+    DS 	: 	Dale Score, or % of words not on Dale-Chall list of 3,000 common words
+    ASL 	: 	average sentence length (the number of words divided by the number of sentences)
+
+    Then, use the mapping table below to convert the raw score, Reading Grade Score (RGS), to its corresponding grade level:
+
+    Mapping Reading Grade Score (RGS) to Grade Level:
+
+    Reading
+    Grade Score
+    	
+
+    Reading
+    Grade Level
+    	Education
+    Level 	
+
+    Age
+    4.9- 	1st grade
+    2nd grade
+    3rd grade
+    4th grade 	Primary 	  5-10
+    5.0 - 5.9 	5th grade
+    6th grade 	10-12
+    6.0 - 6.9 	7th grade
+    8th grade 	Secondary 	12-14
+    7.0 - 7.9 	9th grade
+    10th grade 	14-16
+    8.0 - 8.9 	11th grade
+    12th grade 	16-18
+    9.0 - 9.9 	13th grade
+    15th grade 	College
+    University 	18-22
+    10+ 	16th grade
+    and higher 	22+
+
+The main idea behind the Dale-Chall readability formula is that, should a text be written with familiar words, it becomes easier to read and, therefore, expressed ideas are easier to understand and remember.
+Dale Index
+
+Also known as: Dale readability, Dale readability score, Dall reading level, Dale score, Dale formula, Dale readability index, or Dale readability formula.
+
+The The Dale Index (DI) is based on the Flesch Reading Ease score.
+
+The formula for the Dale Index is:
+
+    DI = 11.534 - (0.053 x FRE)
+
+where:
+
+    FRE 	: 	Flesch Reading Ease score: % of words not on Dale-Chall list of 3,000 common words
+    ASL 	: 	average sentence length (the number of words divided by the number of sentences)
+
+The Dale-Chall Word List
+
+
+
+
+
+
+
+
+
+
+ cat list.txt | sed -E  "s/\t/\n/" | grep  -E ^[A-Z]?[a-z]+  > formatted_list.txt
+
+
+
+
+
+
+

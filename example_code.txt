@@ -1,0 +1,27 @@
+> koRpus::set.kRp.env(TT.cmd='treetagger/cmd/tree-tagger-english', lang='en')
+
+> tokSAS<-koRpus::tokenize('Downloads/SenseandSensibility_JaneAusten.txt')
+
+> sasDC<-koRpus::dale.chall(tokSAS,'formatted_list.txt')
+
+> sasB<-koRpus::bormuth(tokSAS,'formatted_list.txt')
+
+> sasB
+
+Bormuth Mean Cloze
+  Parameters: default 
+  Fam. words: 69%
+  Mean Cloze: 35.7 
+       Grade: 9.64 
+
+Text language: en 
+> sasDC
+
+Dale-Chall Readability Formula
+  Parameters: custom 
+ Not on list: 31%
+   Raw value: 23.48 
+       Grade: 11-12 
+         Age: 16-18 
+
+Text language: en 
