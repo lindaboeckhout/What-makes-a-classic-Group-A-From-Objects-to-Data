@@ -1,3 +1,5 @@
+#tokenizing and calculating readability formulas in Rstudio using koRpus package
+
 > koRpus::set.kRp.env(TT.cmd='treetagger/cmd/tree-tagger-english', lang='en')
 
 > tokSAS<-koRpus::tokenize('Downloads/SenseandSensibility_JaneAusten.txt')
@@ -25,3 +27,10 @@ Dale-Chall Readability Formula
          Age: 16-18 
 
 Text language: en 
+
+# calculating correlation coeficient between different variables, e.g. number of ratings on Goodreads and the ARI
+
+> cor(as.numeric(data$'Number of ratings %'), as.numeric(sub("%", "e-2", data$'Unfamiliar words')))
+[1] -0.3363813
+> cor(as.numeric(data$'Number of ratings %'), as.numeric(data$'ARI'))
+[1] 0.3707255
