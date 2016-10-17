@@ -1,0 +1,885 @@
+
+R version 3.3.1 (2016-06-21) -- "Bug in Your Hair"
+Copyright (C) 2016 The R Foundation for Statistical Computing
+Platform: i386-w64-mingw32/i386 (32-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[Previously saved workspace restored]
+
+> overallrating
+ [1] 4.05 4.24 3.82 3.98 4.13 3.79 3.81 3.84 3.88 3.74 3.78 3.82 3.89 3.95 3.99
+[16] 3.49 3.96 3.80 3.74 4.07 3.65
+> getwd
+function () 
+.Internal(getwd())
+<bytecode: 0x04c21b74>
+<environment: namespace:base>
+> setwd("E:/CIW JAAR 3 DIGITAL HUMANITIES/From Objects To Data/Data")
+> Book1 = read.csv ("Book1.csv")
+> Book1
+                      bookname overallrating numberofratings numberofeditions
+1       Sense and Sensibility           4.05          722431             1575
+2          Pride and Prejudice          4.24         1974195             2831
+3               Mansfield Park          3.82          201010              980
+4                         Emma          3.98          464196             1370
+5                   Persuasion          4.13          362874             1122
+6            Northanger Abbey           3.79          211383             1024
+7          The Pickwick Papers          3.81           18464              511
+8                Oliver Twist           3.84          231679             1499
+9            Nicholas Nickleby          3.88           31091              424
+10     The Old Curiosity Shop           3.74           11619              348
+11              Barnaby Rudge           3.78            6883              239
+12          Martin Chuzzlewit           3.82           11986              262
+13             Dombey and Son           3.89            9115              260
+14           David Copperfield          3.95          153155              163
+15                Bleak House           3.99           68076              549
+16                 Hard Times           3.49           38530              602
+17              Little Dorrit           3.96           33368              367
+18       A Tale of Two Cities           3.80           11984             1594
+19         Great Expectations           3.74          466817              219
+20          Our Mutual Friend           4.07           18730              319
+21 The Mystery of Edwin Drood           3.65            7910              289
+   numberofreviews  author
+1            10303  Austen
+2            44403  Austen
+3             6314  Austen
+4            10514  Austen
+5            11784  Austen
+6             7625  Austen
+7             1042 Dickens
+8             4743 Dickens
+9             1003 Dickens
+10             701 Dickens
+11             324 Dickens
+12             378 Dickens
+13             424 Dickens
+14            4131 Dickens
+15            2865 Dickens
+16            1866 Dickens
+17            1061 Dickens
+18           11984 Dickens
+19           11233 Dickens
+20             966 Dickens
+21             540 Dickens
+> Book1 = read.csv ("Book1.csv")
+> load("E:\\CIW JAAR 3 DIGITAL HUMANITIES\\From Objects To Data\\Data\\Book1.csv")
+Error: bad restore file magic number (file may be corrupted) -- no data loaded
+In addition: Warning message:
+file ‘Book1.csv’ has magic number 'bookn'
+  Use of save versions prior to 2 is deprecated 
+> getwd
+function () 
+.Internal(getwd())
+<bytecode: 0x04c21b74>
+<environment: namespace:base>
+> setwd("E:/CIW JAAR 3 DIGITAL HUMANITIES/From Objects To Data/Data")
+> Book1 = read.csv ("Book1.csv")
+> Book1
+                      bookname overallrating numberofratings numberofeditions
+1       Sense and Sensibility           4.05          722431             1575
+2          Pride and Prejudice          4.24         1974195             2831
+3               Mansfield Park          3.82          201010              980
+4                         Emma          3.98          464196             1370
+5                   Persuasion          4.13          362874             1122
+6            Northanger Abbey           3.79          211383             1024
+7          The Pickwick Papers          3.81           18464              511
+8                Oliver Twist           3.84          231679             1499
+9            Nicholas Nickleby          3.88           31091              424
+10     The Old Curiosity Shop           3.74           11619              348
+11              Barnaby Rudge           3.78            6883              239
+12          Martin Chuzzlewit           3.82           11986              262
+13             Dombey and Son           3.89            9115              260
+14           David Copperfield          3.95          153155              163
+15                Bleak House           3.99           68076              549
+16                 Hard Times           3.49           38530              602
+17              Little Dorrit           3.96           33368              367
+18       A Tale of Two Cities           3.80           11984             1594
+19         Great Expectations           3.74          466817              219
+20          Our Mutual Friend           4.07           18730              319
+21 The Mystery of Edwin Drood           3.65            7910              289
+   numberofreviews  author
+1            10303  Austen
+2            44403  Austen
+3             6314  Austen
+4            10514  Austen
+5            11784  Austen
+6             7625  Austen
+7             1042 Dickens
+8             4743 Dickens
+9             1003 Dickens
+10             701 Dickens
+11             324 Dickens
+12             378 Dickens
+13             424 Dickens
+14            4131 Dickens
+15            2865 Dickens
+16            1866 Dickens
+17            1061 Dickens
+18           11984 Dickens
+19           11233 Dickens
+20             966 Dickens
+21             540 Dickens
+> ?filter
+starting httpd help server ... done
+> austendata <- Book1 [1:5,]
+> austendata
+                bookname overallrating numberofratings numberofeditions
+1 Sense and Sensibility           4.05          722431             1575
+2    Pride and Prejudice          4.24         1974195             2831
+3         Mansfield Park          3.82          201010              980
+4                   Emma          3.98          464196             1370
+5             Persuasion          4.13          362874             1122
+  numberofreviews author
+1           10303 Austen
+2           44403 Austen
+3            6314 Austen
+4           10514 Austen
+5           11784 Austen
+> austenpop <- austendata [,2:5]
+> austenpop
+  overallrating numberofratings numberofeditions numberofreviews
+1          4.05          722431             1575           10303
+2          4.24         1974195             2831           44403
+3          3.82          201010              980            6314
+4          3.98          464196             1370           10514
+5          4.13          362874             1122           11784
+> austendata <- Book1 [1:6,]
+> austendata
+                bookname overallrating numberofratings numberofeditions
+1 Sense and Sensibility           4.05          722431             1575
+2    Pride and Prejudice          4.24         1974195             2831
+3         Mansfield Park          3.82          201010              980
+4                   Emma          3.98          464196             1370
+5             Persuasion          4.13          362874             1122
+6      Northanger Abbey           3.79          211383             1024
+  numberofreviews author
+1           10303 Austen
+2           44403 Austen
+3            6314 Austen
+4           10514 Austen
+5           11784 Austen
+6            7625 Austen
+> austenpop <- austendata [,2:5]
+> austenpop
+  overallrating numberofratings numberofeditions numberofreviews
+1          4.05          722431             1575           10303
+2          4.24         1974195             2831           44403
+3          3.82          201010              980            6314
+4          3.98          464196             1370           10514
+5          4.13          362874             1122           11784
+6          3.79          211383             1024            7625
+> dickens <- Book1 [7:21,]
+> dickensdata <- Book1 [7:21,]
+> dickensdata
+                      bookname overallrating numberofratings numberofeditions
+7          The Pickwick Papers          3.81           18464              511
+8                Oliver Twist           3.84          231679             1499
+9            Nicholas Nickleby          3.88           31091              424
+10     The Old Curiosity Shop           3.74           11619              348
+11              Barnaby Rudge           3.78            6883              239
+12          Martin Chuzzlewit           3.82           11986              262
+13             Dombey and Son           3.89            9115              260
+14           David Copperfield          3.95          153155              163
+15                Bleak House           3.99           68076              549
+16                 Hard Times           3.49           38530              602
+17              Little Dorrit           3.96           33368              367
+18       A Tale of Two Cities           3.80           11984             1594
+19         Great Expectations           3.74          466817              219
+20          Our Mutual Friend           4.07           18730              319
+21 The Mystery of Edwin Drood           3.65            7910              289
+   numberofreviews  author
+7             1042 Dickens
+8             4743 Dickens
+9             1003 Dickens
+10             701 Dickens
+11             324 Dickens
+12             378 Dickens
+13             424 Dickens
+14            4131 Dickens
+15            2865 Dickens
+16            1866 Dickens
+17            1061 Dickens
+18           11984 Dickens
+19           11233 Dickens
+20             966 Dickens
+21             540 Dickens
+> dickenspop <- dickensdata [,2:5]
+> dickenspop
+   overallrating numberofratings numberofeditions numberofreviews
+7           3.81           18464              511            1042
+8           3.84          231679             1499            4743
+9           3.88           31091              424            1003
+10          3.74           11619              348             701
+11          3.78            6883              239             324
+12          3.82           11986              262             378
+13          3.89            9115              260             424
+14          3.95          153155              163            4131
+15          3.99           68076              549            2865
+16          3.49           38530              602            1866
+17          3.96           33368              367            1061
+18          3.80           11984             1594           11984
+19          3.74          466817              219           11233
+20          4.07           18730              319             966
+21          3.65            7910              289             540
+> mean(austenpop)
+[1] NA
+Warning message:
+In mean.default(austenpop) :
+  argument is not numeric or logical: returning NA
+> class(austenpop)
+[1] "data.frame"
+> class(dickenspop)
+[1] "data.frame"
+> austenpop$austenpopbook <- rowSums (austenpop[,2:5])
+Error in `[.data.frame`(austenpop, , 2:5) : undefined columns selected
+> austen$austenpopbook <- rowSums (austenpop[,2:5])
+Error in `[.data.frame`(austenpop, , 2:5) : undefined columns selected
+> austenpop[1:6,2:5]
+Error in `[.data.frame`(austenpop, 1:6, 2:5) : undefined columns selected
+> Book1$austenpopbook <- rowSums (Book1[,2:5]
++ Book1$austenpopbook <- rowSums (Book1[,2:5])
+Error: unexpected symbol in:
+"Book1$austenpopbook <- rowSums (Book1[,2:5]
+Book1"
+> Book1$austenpopbook <- rowSums (Book1[,2:5])
+> austenpopbook
+Error: object 'austenpopbook' not found
+> Book1$austenpopbook
+ [1]  734313.05 2021433.24  208307.82  476083.98  375784.13  220035.79
+ [7]   20020.81  237924.84   32521.88   12671.74    7449.78   12629.82
+[13]    9802.89  157452.95   71493.99   41001.49   34799.96   25565.80
+[19]  478272.74   20019.07    8742.65
+> allpopbook <- rowSums (Book1[,2:5])
+> allpopbook
+ [1]  734313.05 2021433.24  208307.82  476083.98  375784.13  220035.79
+ [7]   20020.81  237924.84   32521.88   12671.74    7449.78   12629.82
+[13]    9802.89  157452.95   71493.99   41001.49   34799.96   25565.80
+[19]  478272.74   20019.07    8742.65
+> class(allpopbook)
+[1] "numeric"
+> ?numeric
+> allpopbook / 4
+ [1] 183578.263 505358.310  52076.955 119020.995  93946.033  55008.948
+ [7]   5005.203  59481.210   8130.470   3167.935   1862.445   3157.455
+[13]   2450.722  39363.238  17873.498  10250.372   8699.990   6391.450
+[19] 119568.185   5004.767   2185.662
+> Book1 ["popularitysimple"] <- allpopbook
+> Book1
+                      bookname overallrating numberofratings numberofeditions
+1       Sense and Sensibility           4.05          722431             1575
+2          Pride and Prejudice          4.24         1974195             2831
+3               Mansfield Park          3.82          201010              980
+4                         Emma          3.98          464196             1370
+5                   Persuasion          4.13          362874             1122
+6            Northanger Abbey           3.79          211383             1024
+7          The Pickwick Papers          3.81           18464              511
+8                Oliver Twist           3.84          231679             1499
+9            Nicholas Nickleby          3.88           31091              424
+10     The Old Curiosity Shop           3.74           11619              348
+11              Barnaby Rudge           3.78            6883              239
+12          Martin Chuzzlewit           3.82           11986              262
+13             Dombey and Son           3.89            9115              260
+14           David Copperfield          3.95          153155              163
+15                Bleak House           3.99           68076              549
+16                 Hard Times           3.49           38530              602
+17              Little Dorrit           3.96           33368              367
+18       A Tale of Two Cities           3.80           11984             1594
+19         Great Expectations           3.74          466817              219
+20          Our Mutual Friend           4.07           18730              319
+21 The Mystery of Edwin Drood           3.65            7910              289
+   numberofreviews  author austenpopbook popularitysimple
+1            10303  Austen     734313.05        734313.05
+2            44403  Austen    2021433.24       2021433.24
+3             6314  Austen     208307.82        208307.82
+4            10514  Austen     476083.98        476083.98
+5            11784  Austen     375784.13        375784.13
+6             7625  Austen     220035.79        220035.79
+7             1042 Dickens      20020.81         20020.81
+8             4743 Dickens     237924.84        237924.84
+9             1003 Dickens      32521.88         32521.88
+10             701 Dickens      12671.74         12671.74
+11             324 Dickens       7449.78          7449.78
+12             378 Dickens      12629.82         12629.82
+13             424 Dickens       9802.89          9802.89
+14            4131 Dickens     157452.95        157452.95
+15            2865 Dickens      71493.99         71493.99
+16            1866 Dickens      41001.49         41001.49
+17            1061 Dickens      34799.96         34799.96
+18           11984 Dickens      25565.80         25565.80
+19           11233 Dickens     478272.74        478272.74
+20             966 Dickens      20019.07         20019.07
+21             540 Dickens       8742.65          8742.65
+> Book1$austenpopbook <- NULL
+> Book1
+                      bookname overallrating numberofratings numberofeditions
+1       Sense and Sensibility           4.05          722431             1575
+2          Pride and Prejudice          4.24         1974195             2831
+3               Mansfield Park          3.82          201010              980
+4                         Emma          3.98          464196             1370
+5                   Persuasion          4.13          362874             1122
+6            Northanger Abbey           3.79          211383             1024
+7          The Pickwick Papers          3.81           18464              511
+8                Oliver Twist           3.84          231679             1499
+9            Nicholas Nickleby          3.88           31091              424
+10     The Old Curiosity Shop           3.74           11619              348
+11              Barnaby Rudge           3.78            6883              239
+12          Martin Chuzzlewit           3.82           11986              262
+13             Dombey and Son           3.89            9115              260
+14           David Copperfield          3.95          153155              163
+15                Bleak House           3.99           68076              549
+16                 Hard Times           3.49           38530              602
+17              Little Dorrit           3.96           33368              367
+18       A Tale of Two Cities           3.80           11984             1594
+19         Great Expectations           3.74          466817              219
+20          Our Mutual Friend           4.07           18730              319
+21 The Mystery of Edwin Drood           3.65            7910              289
+   numberofreviews  author popularitysimple
+1            10303  Austen        734313.05
+2            44403  Austen       2021433.24
+3             6314  Austen        208307.82
+4            10514  Austen        476083.98
+5            11784  Austen        375784.13
+6             7625  Austen        220035.79
+7             1042 Dickens         20020.81
+8             4743 Dickens        237924.84
+9             1003 Dickens         32521.88
+10             701 Dickens         12671.74
+11             324 Dickens          7449.78
+12             378 Dickens         12629.82
+13             424 Dickens          9802.89
+14            4131 Dickens        157452.95
+15            2865 Dickens         71493.99
+16            1866 Dickens         41001.49
+17            1061 Dickens         34799.96
+18           11984 Dickens         25565.80
+19           11233 Dickens        478272.74
+20             966 Dickens         20019.07
+21             540 Dickens          8742.65
+> Book1$popularitysimple <- NULL
+> Book1
+                      bookname overallrating numberofratings numberofeditions
+1       Sense and Sensibility           4.05          722431             1575
+2          Pride and Prejudice          4.24         1974195             2831
+3               Mansfield Park          3.82          201010              980
+4                         Emma          3.98          464196             1370
+5                   Persuasion          4.13          362874             1122
+6            Northanger Abbey           3.79          211383             1024
+7          The Pickwick Papers          3.81           18464              511
+8                Oliver Twist           3.84          231679             1499
+9            Nicholas Nickleby          3.88           31091              424
+10     The Old Curiosity Shop           3.74           11619              348
+11              Barnaby Rudge           3.78            6883              239
+12          Martin Chuzzlewit           3.82           11986              262
+13             Dombey and Son           3.89            9115              260
+14           David Copperfield          3.95          153155              163
+15                Bleak House           3.99           68076              549
+16                 Hard Times           3.49           38530              602
+17              Little Dorrit           3.96           33368              367
+18       A Tale of Two Cities           3.80           11984             1594
+19         Great Expectations           3.74          466817              219
+20          Our Mutual Friend           4.07           18730              319
+21 The Mystery of Edwin Drood           3.65            7910              289
+   numberofreviews  author
+1            10303  Austen
+2            44403  Austen
+3             6314  Austen
+4            10514  Austen
+5            11784  Austen
+6             7625  Austen
+7             1042 Dickens
+8             4743 Dickens
+9             1003 Dickens
+10             701 Dickens
+11             324 Dickens
+12             378 Dickens
+13             424 Dickens
+14            4131 Dickens
+15            2865 Dickens
+16            1866 Dickens
+17            1061 Dickens
+18           11984 Dickens
+19           11233 Dickens
+20             966 Dickens
+21             540 Dickens
+> popularitysimple <- allpopbook / 4
+> popularitysimple
+ [1] 183578.263 505358.310  52076.955 119020.995  93946.033  55008.948
+ [7]   5005.203  59481.210   8130.470   3167.935   1862.445   3157.455
+[13]   2450.722  39363.238  17873.498  10250.372   8699.990   6391.450
+[19] 119568.185   5004.767   2185.662
+> Book1["popularitysimple"] <- popularitysimple
+> Book1
+                      bookname overallrating numberofratings numberofeditions
+1       Sense and Sensibility           4.05          722431             1575
+2          Pride and Prejudice          4.24         1974195             2831
+3               Mansfield Park          3.82          201010              980
+4                         Emma          3.98          464196             1370
+5                   Persuasion          4.13          362874             1122
+6            Northanger Abbey           3.79          211383             1024
+7          The Pickwick Papers          3.81           18464              511
+8                Oliver Twist           3.84          231679             1499
+9            Nicholas Nickleby          3.88           31091              424
+10     The Old Curiosity Shop           3.74           11619              348
+11              Barnaby Rudge           3.78            6883              239
+12          Martin Chuzzlewit           3.82           11986              262
+13             Dombey and Son           3.89            9115              260
+14           David Copperfield          3.95          153155              163
+15                Bleak House           3.99           68076              549
+16                 Hard Times           3.49           38530              602
+17              Little Dorrit           3.96           33368              367
+18       A Tale of Two Cities           3.80           11984             1594
+19         Great Expectations           3.74          466817              219
+20          Our Mutual Friend           4.07           18730              319
+21 The Mystery of Edwin Drood           3.65            7910              289
+   numberofreviews  author popularitysimple
+1            10303  Austen       183578.263
+2            44403  Austen       505358.310
+3             6314  Austen        52076.955
+4            10514  Austen       119020.995
+5            11784  Austen        93946.033
+6             7625  Austen        55008.948
+7             1042 Dickens         5005.203
+8             4743 Dickens        59481.210
+9             1003 Dickens         8130.470
+10             701 Dickens         3167.935
+11             324 Dickens         1862.445
+12             378 Dickens         3157.455
+13             424 Dickens         2450.722
+14            4131 Dickens        39363.238
+15            2865 Dickens        17873.498
+16            1866 Dickens        10250.372
+17            1061 Dickens         8699.990
+18           11984 Dickens         6391.450
+19           11233 Dickens       119568.185
+20             966 Dickens         5004.767
+21             540 Dickens         2185.662
+> austenpop
+  overallrating numberofratings numberofeditions numberofreviews
+1          4.05          722431             1575           10303
+2          4.24         1974195             2831           44403
+3          3.82          201010              980            6314
+4          3.98          464196             1370           10514
+5          4.13          362874             1122           11784
+6          3.79          211383             1024            7625
+> Number.of.editions
+Error: object 'Number.of.editions' not found
+> austendata
+                bookname overallrating numberofratings numberofeditions
+1 Sense and Sensibility           4.05          722431             1575
+2    Pride and Prejudice          4.24         1974195             2831
+3         Mansfield Park          3.82          201010              980
+4                   Emma          3.98          464196             1370
+5             Persuasion          4.13          362874             1122
+6      Northanger Abbey           3.79          211383             1024
+  numberofreviews author
+1           10303 Austen
+2           44403 Austen
+3            6314 Austen
+4           10514 Austen
+5           11784 Austen
+6            7625 Austen
+> overallrating <- Book1[,2]
+> numberofratings <- Book1[,3]
+> numberofeditions <- Book1[,4]
+> numberofreviews <- Book[,5]
+Error: object 'Book' not found
+> numberofreviews <- Book1[,5]
+> overallrating
+ [1] 4.05 4.24 3.82 3.98 4.13 3.79 3.81 3.84 3.88 3.74 3.78 3.82 3.89 3.95 3.99
+[16] 3.49 3.96 3.80 3.74 4.07 3.65
+> class(overallrating)
+[1] "numeric"
+> overallrating
+ [1] 4.05 4.24 3.82 3.98 4.13 3.79 3.81 3.84 3.88 3.74 3.78 3.82 3.89 3.95 3.99
+[16] 3.49 3.96 3.80 3.74 4.07 3.65
+> mean(overallrating)
+[1] 3.877143
+> mean (numberofratings)
+[1] 240737.9
+> mean(numberofeditions)
+[1] 787.9524
+> mean(numberofreviews)
+[1] 6390.667
+> austendata
+                bookname overallrating numberofratings numberofeditions
+1 Sense and Sensibility           4.05          722431             1575
+2    Pride and Prejudice          4.24         1974195             2831
+3         Mansfield Park          3.82          201010              980
+4                   Emma          3.98          464196             1370
+5             Persuasion          4.13          362874             1122
+6      Northanger Abbey           3.79          211383             1024
+  numberofreviews author
+1           10303 Austen
+2           44403 Austen
+3            6314 Austen
+4           10514 Austen
+5           11784 Austen
+6            7625 Austen
+> austenpop
+  overallrating numberofratings numberofeditions numberofreviews
+1          4.05          722431             1575           10303
+2          4.24         1974195             2831           44403
+3          3.82          201010              980            6314
+4          3.98          464196             1370           10514
+5          4.13          362874             1122           11784
+6          3.79          211383             1024            7625
+> ?mean
+> summary(austenpop)
+ overallrating   numberofratings   numberofeditions numberofreviews
+ Min.   :3.790   Min.   : 201010   Min.   : 980     Min.   : 6314  
+ 1st Qu.:3.860   1st Qu.: 249256   1st Qu.:1048     1st Qu.: 8294  
+ Median :4.015   Median : 413535   Median :1246     Median :10408  
+ Mean   :4.002   Mean   : 656015   Mean   :1484     Mean   :15157  
+ 3rd Qu.:4.110   3rd Qu.: 657872   3rd Qu.:1524     3rd Qu.:11466  
+ Max.   :4.240   Max.   :1974195   Max.   :2831     Max.   :44403  
+> summary(dickenspop)
+ overallrating   numberofratings  numberofeditions numberofreviews  
+ Min.   :3.490   Min.   :  6883   Min.   : 163.0   Min.   :  324.0  
+ 1st Qu.:3.760   1st Qu.: 11802   1st Qu.: 261.0   1st Qu.:  620.5  
+ Median :3.820   Median : 18730   Median : 348.0   Median : 1042.0  
+ Mean   :3.827   Mean   : 74627   Mean   : 509.7   Mean   : 2884.1  
+ 3rd Qu.:3.920   3rd Qu.: 53303   3rd Qu.: 530.0   3rd Qu.: 3498.0  
+ Max.   :4.070   Max.   :466817   Max.   :1594.0   Max.   :11984.0  
+> summary(Book1)
+                  bookname  overallrating   numberofratings   numberofeditions
+ A Tale of Two Cities : 1   Min.   :3.490   Min.   :   6883   Min.   : 163    
+ Barnaby Rudge        : 1   1st Qu.:3.790   1st Qu.:  11986   1st Qu.: 289    
+ Bleak House          : 1   Median :3.840   Median :  38530   Median : 511    
+ David Copperfield    : 1   Mean   :3.877   Mean   : 240738   Mean   : 788    
+ Dombey and Son       : 1   3rd Qu.:3.980   3rd Qu.: 231679   3rd Qu.:1122    
+ Emma                 : 1   Max.   :4.240   Max.   :1974195   Max.   :2831    
+ (Other)              :15                                                     
+ numberofreviews     author   popularitysimple
+ Min.   :  324   Austen : 6   Min.   :  1862  
+ 1st Qu.:  966   Dickens:15   1st Qu.:  5005  
+ Median : 2865                Median : 10250  
+ Mean   : 6391                Mean   : 61980  
+ 3rd Qu.:10303                3rd Qu.: 59481  
+ Max.   :44403                Max.   :505358  
+                                              
+> ?trim
+No documentation for ‘trim’ in specified packages and libraries:
+you could try ‘??trim’
+> ??trim
+> ?cbind
+> (4.002+656015+1484+15157)/4
+[1] 168165
+> (3.827+74627+509.7+2884.1)/4
+[1] 19506.16
+> (3.877142+240737.9+787.9524+6390.667)/4
+[1] 61980.1
+> popularitysimple
+ [1] 183578.263 505358.310  52076.955 119020.995  93946.033  55008.948
+ [7]   5005.203  59481.210   8130.470   3167.935   1862.445   3157.455
+[13]   2450.722  39363.238  17873.498  10250.372   8699.990   6391.450
+[19] 119568.185   5004.767   2185.662
+> popularitysimple(bookname)
+Error: could not find function "popularitysimple"
+> Book1[,17]
+Error in `[.data.frame`(Book1, , 17) : undefined columns selected
+> Book1[,1, 7]
+ [1] Sense and Sensibility       Pride and Prejudice        
+ [3] Mansfield Park              Emma                       
+ [5] Persuasion                  Northanger Abbey           
+ [7] The Pickwick Papers         Oliver Twist               
+ [9] Nicholas Nickleby           The Old Curiosity Shop     
+[11] Barnaby Rudge               Martin Chuzzlewit          
+[13] Dombey and Son              David Copperfield          
+[15] Bleak House                 Hard Times                 
+[17] Little Dorrit               A Tale of Two Cities       
+[19] Great Expectations          Our Mutual Friend          
+[21] The Mystery of Edwin Drood 
+21 Levels: A Tale of Two Cities  Barnaby Rudge  ... The Pickwick Papers
+> Book1 [,1]
+ [1] Sense and Sensibility       Pride and Prejudice        
+ [3] Mansfield Park              Emma                       
+ [5] Persuasion                  Northanger Abbey           
+ [7] The Pickwick Papers         Oliver Twist               
+ [9] Nicholas Nickleby           The Old Curiosity Shop     
+[11] Barnaby Rudge               Martin Chuzzlewit          
+[13] Dombey and Son              David Copperfield          
+[15] Bleak House                 Hard Times                 
+[17] Little Dorrit               A Tale of Two Cities       
+[19] Great Expectations          Our Mutual Friend          
+[21] The Mystery of Edwin Drood 
+21 Levels: A Tale of Two Cities  Barnaby Rudge  ... The Pickwick Papers
+> Book1 [,7]
+ [1] 183578.263 505358.310  52076.955 119020.995  93946.033  55008.948
+ [7]   5005.203  59481.210   8130.470   3167.935   1862.445   3157.455
+[13]   2450.722  39363.238  17873.498  10250.372   8699.990   6391.450
+[19] 119568.185   5004.767   2185.662
+> ls()
+ [1] "allpopbook"        "austendata"        "austenpop"        
+ [4] "Book1"             "dickens"           "dickensdata"      
+ [7] "dickenspop"        "numberofeditions"  "numberofratings"  
+[10] "numberofreviews"   "overallrating"     "popularitysimple" 
+[13] "popularitysimpleA" "popularitysimpleD"
+> pwd
+Error: object 'pwd' not found
+> search()
+[1] ".GlobalEnv"        "package:stats"     "package:graphics" 
+[4] "package:grDevices" "package:utils"     "package:datasets" 
+[7] "package:methods"   "Autoloads"         "package:base"     
+> help("new file")
+No documentation for ‘new file’ in specified packages and libraries:
+you could try ‘??new file’
+> help("export")
+No documentation for ‘export’ in specified packages and libraries:
+you could try ‘??export’
+> ?export
+No documentation for ‘export’ in specified packages and libraries:
+you could try ‘??export’
+> ??export
+> ?graph
+No documentation for ‘graph’ in specified packages and libraries:
+you could try ‘??graph’
+> ?graphs
+No documentation for ‘graphs’ in specified packages and libraries:
+you could try ‘??graphs’
+> ??graph
+> ?$
+Error: unexpected '$' in "?$"
+> $
+Error: unexpected '$' in "$"
+> ?table
+> ?csv
+No documentation for ‘csv’ in specified packages and libraries:
+you could try ‘??csv’
+> ?.csv
+No documentation for ‘.csv’ in specified packages and libraries:
+you could try ‘??.csv’
+> popularitysimple / 21
+ [1]  8741.82202 24064.68143  2479.85500  5667.66643  4473.62060  2619.47369
+ [7]   238.34298  2832.43857   387.16524   150.85405    88.68786   150.35500
+[13]   116.70107  1874.43988   851.11893   488.11298   414.28524   304.35476
+[19]  5693.72310   238.32226   104.07917
+> clear
+Error: object 'clear' not found
+> clear()
+Error: could not find function "clear"
+> Book1
+                      bookname overallrating numberofratings numberofeditions
+1       Sense and Sensibility           4.05          722431             1575
+2          Pride and Prejudice          4.24         1974195             2831
+3               Mansfield Park          3.82          201010              980
+4                         Emma          3.98          464196             1370
+5                   Persuasion          4.13          362874             1122
+6            Northanger Abbey           3.79          211383             1024
+7          The Pickwick Papers          3.81           18464              511
+8                Oliver Twist           3.84          231679             1499
+9            Nicholas Nickleby          3.88           31091              424
+10     The Old Curiosity Shop           3.74           11619              348
+11              Barnaby Rudge           3.78            6883              239
+12          Martin Chuzzlewit           3.82           11986              262
+13             Dombey and Son           3.89            9115              260
+14           David Copperfield          3.95          153155              163
+15                Bleak House           3.99           68076              549
+16                 Hard Times           3.49           38530              602
+17              Little Dorrit           3.96           33368              367
+18       A Tale of Two Cities           3.80           11984             1594
+19         Great Expectations           3.74          466817              219
+20          Our Mutual Friend           4.07           18730              319
+21 The Mystery of Edwin Drood           3.65            7910              289
+   numberofreviews  author popularitysimple
+1            10303  Austen       183578.263
+2            44403  Austen       505358.310
+3             6314  Austen        52076.955
+4            10514  Austen       119020.995
+5            11784  Austen        93946.033
+6             7625  Austen        55008.948
+7             1042 Dickens         5005.203
+8             4743 Dickens        59481.210
+9             1003 Dickens         8130.470
+10             701 Dickens         3167.935
+11             324 Dickens         1862.445
+12             378 Dickens         3157.455
+13             424 Dickens         2450.722
+14            4131 Dickens        39363.238
+15            2865 Dickens        17873.498
+16            1866 Dickens        10250.372
+17            1061 Dickens         8699.990
+18           11984 Dickens         6391.450
+19           11233 Dickens       119568.185
+20             966 Dickens         5004.767
+21             540 Dickens         2185.662
+> objects()
+ [1] "allpopbook"        "austendata"        "austenpop"        
+ [4] "Book1"             "dickens"           "dickensdata"      
+ [7] "dickenspop"        "numberofeditions"  "numberofratings"  
+[10] "numberofreviews"   "overallrating"     "popularitysimple" 
+[13] "popularitysimpleA" "popularitysimpleD"
+> colSums(Book1[,7])
+Error in colSums(Book1[, 7]) : 
+  'x' must be an array of at least two dimensions
+> colSums(Book1)
+Error in colSums(Book1) : 'x' must be numeric
+> ?colSums
+> Book1(popularitysimple)
+Error: could not find function "Book1"
+> mean(popularitysimple)
+[1] 61980.1
+> class(popularitysimple)
+[1] "numeric"
+> mean(popularitysimple[1:7,]
++ )
+Error in popularitysimple[1:7, ] : incorrect number of dimensions
+> mean(popularitysimple[1:7,])
+Error in popularitysimple[1:7, ] : incorrect number of dimensions
+> popularitysimpleA <- popularitysimple[1:7,]
+Error in popularitysimple[1:7, ] : incorrect number of dimensions
+> ?add
+No documentation for ‘add’ in specified packages and libraries:
+you could try ‘??add’
+> ?multiply
+No documentation for ‘multiply’ in specified packages and libraries:
+you could try ‘??multiply’
+> ??add
+> ?subset
+> subset(x, subset, select, drop = FALSE, ...)
+Error: '...' used in an incorrect context
+> subset(x, subset, select, drop = FALSE)
+Error in subset(x, subset, select, drop = FALSE) : object 'x' not found
+> subset(Book1, subset, select, drop = FALSE)
+Error in subset.data.frame(Book1, subset, select, drop = FALSE) : 
+  'subset' must be logical
+> subset(Book1, popularitysimple, select, drop = FALSE)
+Error in subset.data.frame(Book1, popularitysimple, select, drop = FALSE) : 
+  'subset' must be logical
+> Book1[1:7,7]
+[1] 183578.263 505358.310  52076.955 119020.995  93946.033  55008.948   5005.203
+> Book1
+                      bookname overallrating numberofratings numberofeditions
+1       Sense and Sensibility           4.05          722431             1575
+2          Pride and Prejudice          4.24         1974195             2831
+3               Mansfield Park          3.82          201010              980
+4                         Emma          3.98          464196             1370
+5                   Persuasion          4.13          362874             1122
+6            Northanger Abbey           3.79          211383             1024
+7          The Pickwick Papers          3.81           18464              511
+8                Oliver Twist           3.84          231679             1499
+9            Nicholas Nickleby          3.88           31091              424
+10     The Old Curiosity Shop           3.74           11619              348
+11              Barnaby Rudge           3.78            6883              239
+12          Martin Chuzzlewit           3.82           11986              262
+13             Dombey and Son           3.89            9115              260
+14           David Copperfield          3.95          153155              163
+15                Bleak House           3.99           68076              549
+16                 Hard Times           3.49           38530              602
+17              Little Dorrit           3.96           33368              367
+18       A Tale of Two Cities           3.80           11984             1594
+19         Great Expectations           3.74          466817              219
+20          Our Mutual Friend           4.07           18730              319
+21 The Mystery of Edwin Drood           3.65            7910              289
+   numberofreviews  author popularitysimple
+1            10303  Austen       183578.263
+2            44403  Austen       505358.310
+3             6314  Austen        52076.955
+4            10514  Austen       119020.995
+5            11784  Austen        93946.033
+6             7625  Austen        55008.948
+7             1042 Dickens         5005.203
+8             4743 Dickens        59481.210
+9             1003 Dickens         8130.470
+10             701 Dickens         3167.935
+11             324 Dickens         1862.445
+12             378 Dickens         3157.455
+13             424 Dickens         2450.722
+14            4131 Dickens        39363.238
+15            2865 Dickens        17873.498
+16            1866 Dickens        10250.372
+17            1061 Dickens         8699.990
+18           11984 Dickens         6391.450
+19           11233 Dickens       119568.185
+20             966 Dickens         5004.767
+21             540 Dickens         2185.662
+> Book1[1:6,7]
+[1] 183578.26 505358.31  52076.96 119020.99  93946.03  55008.95
+> popularitysimpleA <- Book1[1:6,7]
+> popularitysimpleD <- Book1[7:21,7]
+> popularitysimpleA
+[1] 183578.26 505358.31  52076.96 119020.99  93946.03  55008.95
+> popularitysimpleD
+ [1]   5005.203  59481.210   8130.470   3167.935   1862.445   3157.455
+ [7]   2450.722  39363.238  17873.498  10250.372   8699.990   6391.450
+[13] 119568.185   5004.767   2185.662
+> mean(popularitysimpleA)
+[1] 168164.9
+> mean(popularitysimpleD)
+[1] 19506.17
+> save.image("E:\\CIW JAAR 3 DIGITAL HUMANITIES\\From Objects To Data\\Data\\workspace 1641")
+> summary(popularitysimple)
+   Min. 1st Qu.  Median    Mean 3rd Qu.    Max. 
+   1862    5005   10250   61980   59480  505400 
+> ?library
+> library(xlsx)
+Error in library(xlsx) : there is no package called ‘xlsx’
+> write.xlsx(mydata, "c:/mydata.xlsx")
+Error: could not find function "write.xlsx"
+> install.packages("xlsx")
+--- Please select a CRAN mirror for use in this session ---
+also installing the dependencies ‘rJava’, ‘xlsxjars’
+
+trying URL 'https://cran.ma.imperial.ac.uk/bin/windows/contrib/3.3/rJava_0.9-8.zip'
+Content type 'application/zip' length 713892 bytes (697 KB)
+downloaded 697 KB
+
+trying URL 'https://cran.ma.imperial.ac.uk/bin/windows/contrib/3.3/xlsxjars_0.6.1.zip'
+Content type 'application/zip' length 9485183 bytes (9.0 MB)
+downloaded 9.0 MB
+
+trying URL 'https://cran.ma.imperial.ac.uk/bin/windows/contrib/3.3/xlsx_0.5.7.zip'
+Content type 'application/zip' length 401088 bytes (391 KB)
+downloaded 391 KB
+
+package ‘rJava’ successfully unpacked and MD5 sums checked
+package ‘xlsxjars’ successfully unpacked and MD5 sums checked
+package ‘xlsx’ successfully unpacked and MD5 sums checked
+
+The downloaded binary packages are in
+        C:\Users\Nicole Louise\AppData\Local\Temp\RtmpEh5yJF\downloaded_packages
+> library(xlsx)
+Loading required package: rJava
+Error : .onLoad failed in loadNamespace() for 'rJava', details:
+  call: fun(libname, pkgname)
+  error: JAVA_HOME cannot be determined from the Registry
+Error: package ‘rJava’ could not be loaded
+> library(xlsx)
+Loading required package: rJava
+Error : .onLoad failed in loadNamespace() for 'rJava', details:
+  call: fun(libname, pkgname)
+  error: JAVA_HOME cannot be determined from the Registry
+Error: package ‘rJava’ could not be loaded
+> 
+> write.csv2(ALBERTA1, "ALBERTA1.csv")
+Error in is.data.frame(x) : object 'ALBERTA1' not found
+> write.csv2 (Book1, "New Book1.csv")
+> SAVE()
+Error: could not find function "SAVE"
+> ?save
+> save.image()
+> save.image(file = ".RData", version = NULL, ascii = FALSE,
++            compress = !ascii, safe = TRUE)
+Error in save(list = names(.GlobalEnv), file = outfile, version = version,  : 
+  object 'ascii' not found
+> options(save.defaults = list(ascii = TRUE, safe = FALSE))
+Warning message:
+In file.remove(outfile) :
+  cannot remove file '.RDataTmp', reason 'No such file or directory'
+> save.image()
+> unlink(".RData")
+> options(save.defaults = list(ascii = TRUE, safe = FALSE))
+> save.image()
+> unlink(".RData")
+> save.image("E:\\CIW JAAR 3 DIGITAL HUMANITIES\\From Objects To Data\\Data\\workspace 1926")
+> 
