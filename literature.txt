@@ -1,0 +1,39 @@
+LITERATURE & TOOLS
+
+https://reaktanz.de/R/pckg/koRpus/koRpus.pdf
+
+https://rdrr.io/
+
+http://www.readabilityformulas.com/
+
+https://www.rfp-templates.com/readability-scores/
+
+http://www.r-tutor.com/elementary-statistics/numerical-measures/correlation-coefficient
+
+http://wilderdom.com/301/int/cor.html
+
+OTHER RESEARCH
+
+https://www.insidescience.org/news/computer-algorithm-seeks-crack-code-fiction-bestsellers
+http://aclweb.org/anthology/D/D13/D13-1181.pdf
+
+>> The researchers used a process called statistical stylometry, a statistical analysis of literary styles in several genres of books and identified characteristic stylistic elements more common in successful tomes than unsuccessful ones.
+
+They began their research with Project Gutenberg, a database of 44,500 books in the public domain. A book was considered successful when it was critically acclaimed and had a high download count. The books chosen for analysis represented all genres of literature, from science fiction to poetry.
+
+Then, they added some books not in the Gutenberg database, including Charles Dickens' "Tale of Two Cities," and Ernest Hemingway's "The Old Man and the Sea." They also added Dan Brown's latest novel, "The Lost Symbol," and books that have won the Pulitzer Prize, the National Book Award, and other awards.
+
+They took the first 1,000 sentences of 4,129 books of poetry and 1,117 short stories and then analyzed them for various factors. They looked at parts of speech, use of grammar rules, the use of phrases, and "distribution of sentiment" – a way of measuring the use of words.
+
+They found that successful books made great use of conjunctions to join sentences ("and" or "but") and prepositions than less successful books. They also found a high percentage of nouns and adjectives in the successful books; less successful books relied on more verbs and adverbs to describe what was happening.
+
+More successful books relied on verbs describing thought processes rather than actions and emotions. The results varied by genre, but books that are less successful, the researchers reported, used words like "wanted," "took" or "promised." Successful authors employed "recognized" or "remembered."
+
+
+https://www.theguardian.com/books/2016/sep/10/secret-dna-behind-bestsellers-book-algorithm
+
+>> Certain topics were strong indicators of a bestseller, regardless of genre. “Human closeness” came out on top. You could have a book all about human closeness – but that is too much. What we found in bestsellers was that there was a sweet spot, of a couple of topics, each taking up 30% of the book. We noticed super-bestsellers have symmetrical pacing, and other books that are bestsellers didn’t always have this. It seems there is a marked correlation between this plotting and what we would call a page-turner.
+
+
+
+
