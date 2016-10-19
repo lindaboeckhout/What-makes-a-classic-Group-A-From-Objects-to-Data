@@ -1,4 +1,5 @@
-#tokenizing and calculating readability formulas in Rstudio using koRpus package
+#tokenizing and calculating readability formulas in Rstudio using koRpus package 
+#Bormuth and Dale-Chall (new version)
 
 > koRpus::set.kRp.env(TT.cmd='treetagger/cmd/tree-tagger-english', lang='en')
 
